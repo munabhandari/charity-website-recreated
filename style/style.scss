@@ -3,36 +3,63 @@
 @import 'utility';
 @import 'responsive';
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Roboto', sans-serif;
-    .navbar{
-        .logo a{
-           font-size: 18px;
-           font-weight: 400px;
-           vertical-align: middle;
+
+    .navbar {
+        .logo a {
+            font-size: 18px;
+            font-weight: 400px;
+            vertical-align: middle;
         }
-        .navbar-nav{
-            .nav-link{
-                color: $dark;
-                border-right: 1px solid $grey-white;
-                padding: 10px 20px;
-                &:hover{
-                    color: $green;                  
-                } 
-                &:first-child{
-                    border-left:  1px solid $grey-white;
-                }              
+
+        .navbar-nav {
+            .nav-item {
+                &.dropdown {
+                    .dropdown-menu {
+                        background-color: $light-grey;
+                        border-radius: 0;
+                        padding: 0;
+
+                        hr {
+                            padding: 0;
+                            margin: 0;
+                        }
+
+                        .dropdown-item {
+                            color: $dark;
+                            padding: 15px;
+
+                            &:hover {
+                                color: $green;
+                                background-color: $light-grey;
+                                transition: 0.3s;
+                            }
+                        }
+                    }
+                }
+
+                .nav-link {
+                    color: $dark;
+                    border-right: 1px solid $grey-white;
+                    padding: 10px 20px;
+
+                    &:hover {
+                        color: $green;
+                    }
+
+                    &:first-child {
+                        border-left: 1px solid $grey-white;
+                    }
+                }
             }
         }
     }
-    
-    }
-    
-    
 
+}
