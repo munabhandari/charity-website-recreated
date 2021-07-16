@@ -45,4 +45,30 @@ body .navbar .navbar-nav .nav-item .nav-link:hover {
 }
 body .navbar .navbar-nav .nav-item .nav-link:first-child {
   border-left: 1px solid #e6e6ea;
+}
+body .banner .carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: transparent;
+  border: 1px solid #fff;
+  display: inline-block;
+}
+body .banner .carousel-indicators button.active {
+  width: 29px;
+  border-radius: 20px;
+  background-color: #84b515;
+  display: inline-block;
+  border: none;
+}
+body .banner .carousel-inner .carousel-item {
+  align-items: center;
+  position: relative;
+}
+body .banner .carousel-inner .carousel-item .home-content {
+  color: #fff;
+  position: absolute;
+  top: 40px;
+  padding-top: 200px;
+  padding-left: 20px;
 }/*# sourceMappingURL=style.css.map */

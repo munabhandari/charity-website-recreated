@@ -62,4 +62,43 @@ body {
         }
     }
 
+    .banner {
+        .carousel-indicators {
+            button {
+                width: 10px;
+                height: 10px;
+                border-radius: 100%;
+                background-color: transparent;
+                border: 1px solid $white;
+                display: inline-block;
+
+                &.active {
+                    width: 29px;
+                    border-radius: 20px;
+                    background-color: $green;
+                    display: inline-block;
+                    border: none;
+                }
+            }
+        }
+
+        .carousel-inner {
+            .carousel-item {
+                align-items: center;
+
+                &.active {}
+
+                position: relative;
+
+                .home-content {
+                    color: $white;
+                    position: absolute;
+                    top: 40px;
+                    padding-top: 200px;
+                    padding-left: 20px;
+
+                }
+            }
+        }
+    }
 }
