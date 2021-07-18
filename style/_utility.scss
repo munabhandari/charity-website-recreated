@@ -2,17 +2,19 @@
     display: flex;
 }
 
-h1, h2, h3, h4{
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 700;
-    letter-spacing: 1px;
+.f-size{
+    font-size: 21px;    
 }
 
+
 p{   
-   font-size: 20px; 
-   padding-top: 20px;
-   padding-bottom: 20px;
-   letter-spacing: 1px;  
+   font-size: 15px; 
+   font-weight: 300;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   letter-spacing: 0.3px; 
+   line-height: 26px;
+   color: $light-dark; 
 }
 
 button{
@@ -20,5 +22,15 @@ button{
     background-color: $green;
     padding: 15px 30px;
     border: none;
-    border-radius: 30px;
+    border-radius: 30px;   
+    &:hover{
+        opacity: 0.7;       
+    }
+    &:hover a{
+        color: $white;
+    }
+    a{
+        text-decoration: none;
+        color: $white;
+    }   
 }
