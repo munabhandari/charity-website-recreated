@@ -51,11 +51,15 @@ body .container {
 body h1,
 body h2,
 body h3,
-body h4 {
+body h4, body h5 {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: capitalize;
+}
+body h4:hover {
+  color: #84b515;
+  transition: 0.3s;
 }
 body h1 {
   font-size: 55px;
@@ -65,6 +69,9 @@ body h2 {
 }
 body h3 {
   font-size: 33px;
+}
+body h4 {
+  font-size: 26px;
 }
 body .navbar .logo a {
   font-size: 18px;
@@ -200,14 +207,13 @@ body .our-causes .progress {
 }
 body .our-causes .progress .progress-bar {
   background-color: #84b515;
-  width: 87%;
   position: relative;
   overflow: visible;
   border-radius: 4px;
 }
 body .our-causes .progress .progress-bar .prog-tooltip {
   position: absolute;
-  right: -10px;
+  right: -13px;
   bottom: 11px;
   width: 40px;
   background-color: #84b515;
@@ -222,5 +228,14 @@ body .our-causes .progress .progress-bar .prog-tooltip::after {
   background-color: #84b515;
   position: absolute;
   bottom: -8px;
-  left: 13.5px;
+  left: 18px;
+}
+body .our-causes .fund {
+  display: flex;
+  justify-content: space-between;
+  color: grey;
+}
+body .our-causes .fund span {
+  color: #5f646b;
+  font-weight: bolder;
 }/*# sourceMappingURL=style.css.map */
