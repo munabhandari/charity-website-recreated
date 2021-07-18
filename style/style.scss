@@ -11,6 +11,9 @@
 }
 
 body {
+    .container{
+        width: 75% !important;
+    }
     font-family: 'Roboto', sans-serif;
 
     h1,
@@ -29,6 +32,10 @@ body {
 
     h2 {
         font-size: 43px;
+    }
+
+    h3 {
+        font-size: 33px;
     }
 
     // header nav part start..
@@ -145,6 +152,12 @@ body {
             display: flex;
             justify-content: center;
 
+            &:hover {
+                i {
+                    background-color: $green;
+                }
+            }
+
             img {
                 border-radius: 10px;
                 width: 100%;
@@ -167,4 +180,29 @@ body {
     }
 
     //section main part end..
+
+    //number section start.. 
+    .number {
+        .card {
+            //  width: 250px;
+            border: 1px solid $grey;
+            border-radius: 10px;
+            text-align: center;
+
+            &:hover {
+                border-color: $green;
+            }
+
+            i {
+                color: $green;
+                font-size: 43px;
+            }
+
+            p {
+                color: $green;
+            }
+        }
+    }
+
+    //number section end..
 }
