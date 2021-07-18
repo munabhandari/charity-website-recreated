@@ -179,4 +179,48 @@ body .number .card i {
 }
 body .number .card p {
   color: #84b515;
+}
+body .our-causes .card {
+  border: 0px;
+}
+body .our-causes .card img {
+  width: 100%;
+  border-radius: 10px;
+}
+body .our-causes .card:hover {
+  background-color: #84b515;
+}
+body .our-causes .card:hover img {
+  opacity: 0.4;
+  transition: 0.3s;
+}
+body .our-causes .progress {
+  height: 8px;
+  overflow: visible;
+}
+body .our-causes .progress .progress-bar {
+  background-color: #84b515;
+  width: 87%;
+  position: relative;
+  overflow: visible;
+  border-radius: 4px;
+}
+body .our-causes .progress .progress-bar .prog-tooltip {
+  position: absolute;
+  right: -10px;
+  bottom: 11px;
+  width: 40px;
+  background-color: #84b515;
+  color: #fff;
+  border-radius: 20px;
+}
+body .our-causes .progress .progress-bar .prog-tooltip::after {
+  content: " ";
+  display: block;
+  height: 10px;
+  width: 4px;
+  background-color: #84b515;
+  position: absolute;
+  bottom: -8px;
+  left: 13.5px;
 }/*# sourceMappingURL=style.css.map */

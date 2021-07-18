@@ -11,10 +11,12 @@
 }
 
 body {
-    .container{
+    .container {
         width: 75% !important;
     }
-    font-family: 'Roboto', sans-serif;
+
+    font-family: 'Roboto',
+    sans-serif;
 
     h1,
     h2,
@@ -184,7 +186,6 @@ body {
     //number section start.. 
     .number {
         .card {
-            //  width: 250px;
             border: 1px solid $grey;
             border-radius: 10px;
             text-align: center;
@@ -204,5 +205,65 @@ body {
         }
     }
 
-    //number section end..
+    //number section end
+
+    // our causes section start..
+    .our-causes {
+        .card {
+            border: 0px;
+
+            img {
+                width: 100%;
+                border-radius: 10px;
+            }
+
+            &:hover {
+                background-color: $green;
+
+                img {
+                    opacity: 0.4;
+                    transition: 0.3s;
+                }
+            }
+        }
+
+        .progress {
+            height: 8px;
+            overflow: visible;
+            .progress-bar {
+                background-color: $green;
+                width: 87%;
+                position: relative;
+                overflow: visible;
+                border-radius: 4px;
+
+                .prog-tooltip {
+                    position: absolute;
+                    right: -10px;
+                    bottom: 11px;
+                    width: 40px;
+    
+                    background-color: $green;
+                    color: $white;
+                    // padding: 20px;
+                    border-radius: 20px;
+                    &::after{
+                        content: ' ';
+                        display: block;
+                        height: 10px;
+                        width: 4px;
+                        background-color: $green;
+                        position: absolute;
+                        bottom: -8px;
+                        left: 13.5px;
+                    }
+                }
+    
+
+            }
+        }
+    }
+
+    // our causes section end
+
 }
