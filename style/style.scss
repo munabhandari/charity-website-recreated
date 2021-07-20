@@ -12,7 +12,7 @@
 
 body {
     .container {
-        width: 75% !important;
+        width: 77% !important;
     }
 
     font-family: 'Roboto',
@@ -21,13 +21,15 @@ body {
     h1,
     h2,
     h3,
-    h4,h5 {
+    h4,
+    h5 {
         font-family: 'Source Sans Pro', sans-serif;
         font-weight: 700;
         letter-spacing: 1px;
         text-transform: capitalize;
     }
-    h4:hover{
+
+    h4:hover {
         color: $green;
         transition: 0.3s;
     }
@@ -43,8 +45,9 @@ body {
     h3 {
         font-size: 33px;
     }
-    h4{
-        font-size: 26px;
+
+    h4 {
+        font-size: 24px;
     }
 
     // header nav part start..
@@ -217,7 +220,8 @@ body {
     // our causes section start..
     .our-causes {
         .card {
-            border: 0px;
+            border-radius: 10px;
+            overflow: hidden;
 
             img {
                 width: 100%;
@@ -239,7 +243,7 @@ body {
             overflow: visible;
 
             .progress-bar {
-                background-color: $green;              
+                background-color: $green;
                 position: relative;
                 overflow: visible;
                 border-radius: 4px;
@@ -266,24 +270,94 @@ body {
                 }
             }
         }
-        .fund{
+
+        .fund {
             display: flex;
             justify-content: space-between;
             color: grey;
-            
-            & span{
+
+            & span {
                 color: $lighter-dark;
                 font-weight: bolder;
             }
         }
     }
+
     // our causes section end
 
     //upcoming-events section start..
-        .upcoming-events{
-            
+    .upcoming-events {
+        .event-img {
+            border-radius: 10px;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+
+            }
+
+            &:hover {
+                background-color: $green;
+
+                img {
+                    opacity: 0.4;
+                    transition: 0.3s;
+                }
+
+            }
+
         }
+
+        .event-content {
+            i {
+                color: $green;
+                border: 1px solid $grey;
+                padding: 5px;
+                border-radius: 100%;
+            }
+        }
+    }
 
     //upcoming-events section end
 
+    // our blog section start..
+    .our-blog {
+        .card {
+            border-radius: 10px;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                border-radius: 10px;
+            }
+
+            &:hover {
+                background-color: $green;
+
+                img {
+                    opacity: 0.4;
+                    transition: 0.3s;
+                }
+            }
+        }
+
+        .desc {
+            display: flex;
+            justify-content: space-between;
+            color: $light-dark;
+        }
+    }
+    // our blog section end
+
+  // footer section start..
+  footer{
+      background-color: $light-grey;
+      .footer-top{
+          
+      }
+  }
+  
+
+
+// footer section end
 }

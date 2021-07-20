@@ -46,12 +46,13 @@ body {
   font-family: "Roboto", sans-serif;
 }
 body .container {
-  width: 75% !important;
+  width: 77% !important;
 }
 body h1,
 body h2,
 body h3,
-body h4, body h5 {
+body h4,
+body h5 {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
@@ -71,7 +72,7 @@ body h3 {
   font-size: 33px;
 }
 body h4 {
-  font-size: 26px;
+  font-size: 24px;
 }
 body .navbar .logo a {
   font-size: 18px;
@@ -188,7 +189,8 @@ body .number .card p {
   color: #84b515;
 }
 body .our-causes .card {
-  border: 0px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 body .our-causes .card img {
   width: 100%;
@@ -238,4 +240,47 @@ body .our-causes .fund {
 body .our-causes .fund span {
   color: #5f646b;
   font-weight: bolder;
+}
+body .upcoming-events .event-img {
+  border-radius: 10px;
+  overflow: hidden;
+}
+body .upcoming-events .event-img img {
+  width: 100%;
+}
+body .upcoming-events .event-img:hover {
+  background-color: #84b515;
+}
+body .upcoming-events .event-img:hover img {
+  opacity: 0.4;
+  transition: 0.3s;
+}
+body .upcoming-events .event-content i {
+  color: #84b515;
+  border: 1px solid #dddddd;
+  padding: 5px;
+  border-radius: 100%;
+}
+body .our-blog .card {
+  border-radius: 10px;
+  overflow: hidden;
+}
+body .our-blog .card img {
+  width: 100%;
+  border-radius: 10px;
+}
+body .our-blog .card:hover {
+  background-color: #84b515;
+}
+body .our-blog .card:hover img {
+  opacity: 0.4;
+  transition: 0.3s;
+}
+body .our-blog .desc {
+  display: flex;
+  justify-content: space-between;
+  color: #5f646b;
+}
+body footer {
+  background-color: #f4f4f8;
 }/*# sourceMappingURL=style.css.map */
