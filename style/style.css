@@ -283,4 +283,11 @@ body .our-blog .desc {
 }
 body footer {
   background-color: #f4f4f8;
+}
+body footer a {
+  text-decoration: none;
+  color: #5f646b;
+}
+body footer a:last-child {
+  color: #23262a;
 }/*# sourceMappingURL=style.css.map */

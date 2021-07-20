@@ -347,17 +347,28 @@ body {
             color: $light-dark;
         }
     }
+
     // our blog section end
 
-  // footer section start..
-  footer{
-      background-color: $light-grey;
-      .footer-top{
-          
-      }
-  }
-  
+    // footer section start..
+    footer {
+        background-color: $light-grey;
+
+        .footer-top {
+            .footer-logo {}
+        }
+
+        a {
+            text-decoration: none;
+            color: $light-dark;
+
+            &:last-child {
+                color: $dark;
+            }
+        }
+    }
 
 
-// footer section end
+
+    // footer section end
 }
