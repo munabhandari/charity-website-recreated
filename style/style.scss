@@ -21,8 +21,7 @@ body {
     h1,
     h2,
     h3,
-    h4,
-    h5 {
+    h4 {
         font-family: 'Source Sans Pro', sans-serif;
         font-weight: 700;
         letter-spacing: 1px;
@@ -355,20 +354,94 @@ body {
         background-color: $light-grey;
 
         .footer-top {
-            .footer-logo {}
-        }
+            a {
+                text-decoration: none;
+                color: $light-dark;
 
-        a {
-            text-decoration: none;
-            color: $light-dark;
+                &:last-child {
+                    color: $dark;
+                }
 
-            &:last-child {
-                color: $dark;
+                &:last-child:hover {
+                    color: $green;
+                }
             }
+
+            .img-gallery {
+                padding: 0px !important;
+                margin: 1% !important;
+                border-radius: 10px;
+                overflow: hidden;
+                width: 31.33% !important;
+
+                img {
+                    width: 100%;
+                    border-radius: 10px;
+                }
+
+                &:hover {
+                    background-color: $green;
+
+                    img {
+                        opacity: 0.4;
+                        transition: 0.3s;
+                    }
+                }
+            }
+
+            form {
+                input::placeholder {
+                    color: $grey;
+                    font-weight: 300;
+                }
+                .btn{
+                    padding: 12px 30px;
+                 &:hover{
+                        opacity: 0.7;       
+                    }                     
+                }
+            }
+             .icons a{
+                 color: $lighter-dark;
+                 background-color: $white;
+                 border: 1px solid $grey;
+                 padding: 10px;
+                 border-radius: 20px;                
+                 &:hover{
+                     border: 1px solid $green;
+                 }
+             }
+             hr{color: $light-dark;}
+        }
+        .footer-bottom{
+              .f-bottom{
+                justify-content: space-between;
+                .f-content{
+                    color: $lighter-dark;
+                    align-self: center;
+
+                 span{
+                     color: $dark;
+                 }
+                }
+                .f-nav{
+                    .navbar-nav{
+                       
+                        .nav-item{
+                           
+                            align-self: center;
+                            a{
+                                color: $light-dark;
+                                border-right: none;
+                                &:hover{
+                                    color: $green;
+                                }
+                            }
+                        }                 
+                    }
+                }
+              }
         }
     }
-
-
-
-    // footer section end
+// footer section end
 }
