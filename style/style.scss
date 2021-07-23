@@ -3,6 +3,7 @@
 @import 'vars';
 @import 'utility';
 @import 'responsive';
+@import 'blog';
 
 * {
     margin: 0;
@@ -49,51 +50,54 @@ body {
         font-size: 24px;
     }
 
-    // header nav part start..
-    .navbar {
-        .logo a {
-            font-size: 18px;
-            font-weight: 400px;
-            vertical-align: middle;
-        }
+    header {
 
-        .navbar-nav {
-            .nav-item {
-                &.dropdown {
-                    .dropdown-menu {
-                        background-color: $light-grey;
-                        border-radius: 0;
-                        padding: 0;
+        // header nav part start..
+        .navbar {
+            .logo a {
+                font-size: 18px;
+                font-weight: 400px;
+                vertical-align: middle;
+            }
 
-                        hr {
+            .navbar-nav {
+                .nav-item {
+                    &.dropdown {
+                        .dropdown-menu {
+                            background-color: $light-grey;
+                            border-radius: 0;
                             padding: 0;
-                            margin: 0;
-                        }
 
-                        .dropdown-item {
-                            color: $dark;
-                            padding: 15px;
+                            hr {
+                                padding: 0;
+                                margin: 0;
+                            }
 
-                            &:hover {
-                                color: $green;
-                                background-color: $light-grey;
-                                transition: 0.3s;
+                            .dropdown-item {
+                                color: $dark;
+                                padding: 15px;
+
+                                &:hover {
+                                    color: $green;
+                                    background-color: $light-grey;
+                                    transition: 0.3s;
+                                }
                             }
                         }
                     }
-                }
 
-                .nav-link {
-                    color: $dark;
-                    border-right: 1px solid $grey-white;
-                    padding: 20px;
+                    .nav-link {
+                        color: $dark;
+                        border-right: 1px solid $grey-white;
+                        padding: 20px;
 
-                    &:hover {
-                        color: $green;
-                    }
+                        &:hover {
+                            color: $green;
+                        }
 
-                    &:first-child {
-                        border-left: 1px solid $grey-white;
+                        &:first-child {
+                            border-left: 1px solid $grey-white;
+                        }
                     }
                 }
             }
@@ -394,54 +398,78 @@ body {
                     color: $grey;
                     font-weight: 300;
                 }
-                .btn{
+
+                .btn {
                     padding: 12px 30px;
-                 &:hover{
-                        opacity: 0.7;       
-                    }                     
+
+                    &:hover {
+                        opacity: 0.7;
+                    }
                 }
             }
-             .icons a{
-                 color: $lighter-dark;
-                 background-color: $white;
-                 border: 1px solid $grey;
-                 padding: 10px;
-                 border-radius: 20px;                
-                 &:hover{
-                     border: 1px solid $green;
-                 }
-             }
-             hr{color: $light-dark;}
+
+            .icons {
+                display: flex;
+                flex-direction: row;
+
+                a {
+                    margin-right: 10px;
+                    color: $lighter-dark;
+                    background-color: $white;
+                    border: 1px solid $grey;
+                    padding: 10px;
+                    border-radius: 100%;
+                    height: 45px;
+                    width: 45px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    &:hover {
+                        border: 1px solid $green;
+                    }
+                }
+            }
+
+            hr {
+                color: $light-dark;
+            }
         }
-        .footer-bottom{
-              .f-bottom{
+
+        .footer-bottom {
+            .f-bottom {
                 justify-content: space-between;
-                .f-content{
+
+                .f-content {
                     color: $lighter-dark;
                     align-self: center;
 
-                 span{
-                     color: $dark;
-                 }
-                }
-                .f-nav{
-                    .navbar-nav{
-                       
-                        .nav-item{
-                           
-                            align-self: center;
-                            a{
-                                color: $light-dark;
-                                border-right: none;
-                                &:hover{
-                                    color: $green;
-                                }
-                            }
-                        }                 
+                    span {
+                        color: $dark;
                     }
                 }
-              }
+
+
+                .navbar-nav {
+
+                    .nav-item {
+
+                        align-self: center;
+
+                        a {
+                            color: $light-dark;
+                            border-right: none;
+
+                            &:hover {
+                                color: $green;
+                            }
+                        }
+
+                    }
+                }
+            }
         }
     }
-// footer section end
+
+    // footer section end
 }

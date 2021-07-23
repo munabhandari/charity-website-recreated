@@ -1,0 +1,45 @@
+main.blog {
+
+    .b-image {
+        height: 200px;
+        background: url(./../images/background-2.jpg.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: -310px;
+    }
+
+    .b-content {
+        color: $white;
+        padding-top: 60px;
+        margin-left: 12%;
+
+        a {
+            color: $white;
+            text-decoration: none;
+
+            span {
+                color: $green;
+            }
+        }
+    }
+
+    .category {        
+            li {               
+                list-style: none;
+                padding: 7px 0px;
+            }
+
+            a {
+                text-decoration: none;
+                color: $dark;
+                &:hover{
+                    color: $green;
+                }
+                span{
+                    color: $green;
+                }
+            }
+        }
+    
+
+}
