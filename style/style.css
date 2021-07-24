@@ -454,4 +454,10 @@ body footer .footer-bottom .f-bottom .navbar-nav .nav-item a:hover {
   body .container {
     width: 95% !important;
   }
+  body .banner .carousel-inner .carousel-item .home-content {
+    padding-top: 0;
+  }
+  body .blog .b-image {
+    background-position-y: 0;
+  }
 }/*# sourceMappingURL=style.css.map */

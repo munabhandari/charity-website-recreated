@@ -3,6 +3,23 @@
         .container {
             width: 95% !important;
         }
+
+        .banner {
+            .carousel-inner {
+                .carousel-item {
+                    .home-content {
+                        padding-top: 0;
+                    }
+                }
+            }
+        }
+
+        .blog{
+            .b-image{
+                background-position-y: 0;
+            }
+
+        }
     }
 
 }
