@@ -448,4 +448,10 @@ body footer .footer-bottom .f-bottom .navbar-nav .nav-item a {
 }
 body footer .footer-bottom .f-bottom .navbar-nav .nav-item a:hover {
   color: #84b515;
+}
+
+@media only screen and (max-width: 600px) {
+  body .container {
+    width: 95% !important;
+  }
 }/*# sourceMappingURL=style.css.map */
