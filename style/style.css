@@ -99,6 +99,18 @@ main.blog span {
   color: #23262a;
   font-size: bold;
 }
+main.blog .numbers .num-group .num {
+  border: 1px solid #dddddd;
+  border-radius: 100%;
+  align-self: center;
+  height: 45px;
+  width: 45px;
+  text-align: center;
+  line-height: 45px;
+}
+main.blog .numbers .num-group .num:first-child {
+  border: 1px solid #84b515;
+}
 
 * {
   margin: 0;

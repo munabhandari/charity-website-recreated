@@ -24,9 +24,10 @@ main.blog {
     }
 
     .category {
-        ul{          
+        ul {
             padding: 0;
         }
+
         li {
             list-style: none;
             padding: 7px 0px;
@@ -49,7 +50,7 @@ main.blog {
     .post-row {
         &:hover {
             color: $green;
-            
+
             .card {
                 background-color: $green;
 
@@ -72,11 +73,29 @@ main.blog {
 
         }
     }
-    span{
+
+    span {
         color: $dark;
         font-size: bold;
     }
 
-   
+    .numbers {
+        .num-group {
+            .num {
+                $high: 45px;
+                border: 1px solid $grey;
+                border-radius: 100%;
+                align-self: center;
+                height: $high;
+                width: $high;
+                text-align: center;
+                line-height: $high;
+
+                &:first-child {
+                    border: 1px solid $green;
+                }
+            }
+        }
+    }
 
 }
