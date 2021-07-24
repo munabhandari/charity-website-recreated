@@ -23,23 +23,60 @@ main.blog {
         }
     }
 
-    .category {        
-            li {               
-                list-style: none;
-                padding: 7px 0px;
+    .category {
+        ul{          
+            padding: 0;
+        }
+        li {
+            list-style: none;
+            padding: 7px 0px;
+        }
+
+        a {
+            text-decoration: none;
+            color: $dark;
+
+            &:hover {
+                color: $green;
             }
 
-            a {
-                text-decoration: none;
-                color: $dark;
-                &:hover{
-                    color: $green;
-                }
-                span{
-                    color: $green;
+            span {
+                color: $green;
+            }
+        }
+    }
+
+    .post-row {
+        &:hover {
+            color: $green;
+            
+            .card {
+                background-color: $green;
+
+                img {
+                    opacity: 0.4;
+                    transition: 0.3s;
                 }
             }
         }
-    
+
+        .card {
+            border-radius: 10px;
+            overflow: hidden;
+            cursor: pointer;
+
+            img {
+                width: 100%;
+                border-radius: 10px;
+            }
+
+        }
+    }
+    span{
+        color: $dark;
+        font-size: bold;
+    }
+
+   
 
 }

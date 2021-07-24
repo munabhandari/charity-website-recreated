@@ -59,6 +59,9 @@ main.blog .b-content a {
 main.blog .b-content a span {
   color: #84b515;
 }
+main.blog .category ul {
+  padding: 0;
+}
 main.blog .category li {
   list-style: none;
   padding: 7px 0px;
@@ -72,6 +75,29 @@ main.blog .category a:hover {
 }
 main.blog .category a span {
   color: #84b515;
+}
+main.blog .post-row:hover {
+  color: #84b515;
+}
+main.blog .post-row:hover .card {
+  background-color: #84b515;
+}
+main.blog .post-row:hover .card img {
+  opacity: 0.4;
+  transition: 0.3s;
+}
+main.blog .post-row .card {
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+main.blog .post-row .card img {
+  width: 100%;
+  border-radius: 10px;
+}
+main.blog span {
+  color: #23262a;
+  font-size: bold;
 }
 
 * {
@@ -228,6 +254,7 @@ body .number .card p {
 body .our-causes .card {
   border-radius: 10px;
   overflow: hidden;
+  cursor: pointer;
 }
 body .our-causes .card img {
   width: 100%;
