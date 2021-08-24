@@ -12,7 +12,7 @@
 
 body {
     .container {
-        width: 77% !important;
+        max-width: 1170px !important;
     }
 
     font-family: 'Roboto',
@@ -410,6 +410,7 @@ body {
             .icons {
                 display: flex;
                 flex-direction: row;
+                flex-wrap: wrap;
 
                 a {
                     margin-right: 10px;

@@ -4,22 +4,35 @@
             width: 95% !important;
         }
 
-        .banner {
-            .carousel-inner {
-                .carousel-item {
-                    .home-content {
-                        padding-top: 0;
-                    }
-                }
-            }
-        }
-
-        .blog{
-            .b-image{
+    
+        .blog {
+            .b-image {
                 background-position-y: 0;
             }
 
         }
     }
 
+}
+
+@media only screen and (max-width: 1024px) {
+body{
+    .banner {
+        .carousel-inner {
+            .carousel-item {
+
+                height: 424px;
+
+
+                img {
+                    width: auto !important;
+                }
+
+                .home-content {
+                    padding-top: 0px !important;
+                }
+            }
+        }
+    }
+}
 }
